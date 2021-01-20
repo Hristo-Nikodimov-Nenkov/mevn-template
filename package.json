@@ -1,0 +1,20 @@
+{
+  "name": "mevn-template",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "MEVN (MongoDB-Express-Vue-NodeJS) template project.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js"
+  },
+  "author": "Hristo Nenkov",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13"
+  }
+}
