@@ -2,5 +2,15 @@ import express from "express";
 
 const app = express();
 
-const port = process.env.PORT || 8000;
-app.listen(port, ()=> console.log(`Server started on port: ${port}`));
+import {
+    cors,
+    staticFiles,
+    bodyParser,
+    server
+} from "./middlewares/index.js";
+
+cors(app);
+staticFiles(app);
+bodyParser(app);
+
+server(app);
